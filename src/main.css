@@ -1,14 +1,24 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans');
+
 body{
   margin: 0;
   padding: 0;
-  font-family: Avenir, Roboto;
+  font-family: 'Work Sans', sans-serif !important; 
+
 }
 
 .container{
   margin: auto;
   padding: 30px;
+  width: 80%;
 }
-
+.container2{
+  width: 70%;  
+  margin: auto;
+  padding: 1rem;
+  
+}
 li{
   list-style: none;
   display: inline;
@@ -22,4 +32,37 @@ li a{
 .active{
   font-size: 19px;
   font-weight: bold;
+}
+.bold{
+  font-weight: bold !important
+}
+
+.jumbotron{
+  height: 300px;
+  background: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+h1,h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+}
+h1{
+  font-size: 2.4rem;
+}
+p{
+  font-size: 20px;
+}
+
+.ant-statistic-content-value{
+  color: black;
+  font-size: 2rem;
+  font-family: 'Work Sans';
+}
+
+.loader{
+  width: 100px;
+  margin: 40px auto;
 }
