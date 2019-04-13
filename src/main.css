@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans');
 
+
 body{
   margin: 0;
   padding: 0;
@@ -39,7 +40,9 @@ li a{
 
 .jumbotron{
   height: 300px;
-  background: rgb(241, 241, 241);
+  /* background: rgb(241, 241, 241); */
+  background: #2a7775;
+  /* background: #2a5677; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,9 +51,20 @@ li a{
 h1,h2, h3, h4, h5, h6{
   font-family: 'Montserrat', sans-serif;
 font-weight: bold;
+margin: 20px 0;
 }
 h1{
   font-size: 2.4rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.2rem;
+  font-family: 'Work Sans';
 }
 p{
   font-size: 20px;
@@ -65,4 +79,51 @@ p{
 .loader{
   width: 100px;
   margin: 40px auto;
+}
+
+.footer{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  position: relative;
+  bottom: 0
+}
+.header{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: relative;
+  top: 0
+}
+.text-c{
+  text-align: center;
+}
+
+tr{
+  height: 60px !important;
+}
+
+.ant-statistic-content, .ant-statistic-title{
+  text-align: center
+}
+
+.stats{
+  margin: 50px 0 !important;
+  border: 1px solid #efefef;
+  padding: 30px;
+  border-radius: 5px
+}
+
+.ant-card{
+  /* border: 1px solid #f7f7f7; */
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px #f7f7f7;
+  min-height: 250px !important
 }

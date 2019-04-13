@@ -5,7 +5,7 @@ class Search extends Component {
 
   getSearchInpux = (value) => {
     console.log(value)
-    this.props.setGlobalState({ url: value })
+    this.props.setGlobalState({ url: value + '.json' })
   }
   // handle
   render() {
@@ -14,7 +14,7 @@ class Search extends Component {
     return (
       <Fragment>
         <Search
-          placeholder="Paste petition url"
+          placeholder="Paste petition url here..."
           enterButton="Enter"
           size="large"
           onSearch={this.getSearchInpux}
